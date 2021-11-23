@@ -302,7 +302,7 @@
         </div>
         <div class="row">
             <div class="col-lg-11 col-md-11 col-sm-6">
-                <h3 class="text-center heading" style="letter-spacing: 15px;    margin-left: 78px;">INTRO VIDEO</h3>
+                <h3 class="text-center heading" style="letter-spacing: 15px;   ">INTRO VIDEO</h3>
 
             </div>
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
@@ -322,7 +322,7 @@
       <div class="container-fluid con3" style="">
       <div class="row">
         <div class="col-12" style="text-align: center">
-      <img src="{{asset('Images/Asset 6.png')}}" style="margin-top: -9%;" class="text-center" alt="">
+      <img src="{{asset('Images/Asset 6.png')}}" style="margin-top: -9%;    max-width: 100%;" class="text-center" alt="">
     </div>
     </div>
         <br><br>
@@ -475,7 +475,7 @@
         <div class="row">
           <div class="col-md-12">
           <h3 class="text-center">
-            <img class="" src="{{asset('/Images/Asset 9.png')}}" alt="">
+            <img class="" src="{{asset('/Images/Asset 9.png')}}" style="max-width: 100%" alt="">
           </h3>
           </div>
           
@@ -503,7 +503,7 @@
         <div class="row">
           <div class="col-lg-12">
               <h3 class="text-center heading">
-                <img class="" src="{{asset('/Images/Asset 10.png')}}" alt="">
+                <img class="" src="{{asset('/Images/Asset 10.png')}}" style="    max-width: 100%;" alt="">
               </h3>
       
           </div>
@@ -610,7 +610,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h3 class="text-center heading">
-            <img class="partners" src="{{asset('/Images/OUR PARTNERS.png')}}" alt="">
+            <img class="partners" src="{{asset('/Images/OUR PARTNERS.png')}}" style="max-width: 100%" alt="">
           </h3>
       <div class="col-lg-12">
               <div class="text-center">
