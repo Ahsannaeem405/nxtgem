@@ -302,7 +302,7 @@
         </div>
         <div class="row">
             <div class="col-lg-11 col-md-11 col-sm-6">
-                <h3 class="text-center heading" style="letter-spacing: 15px;   ">INTRO VIDEO</h3>
+                <h3 class="text-center heading" style="letter-spacing: 15px; ">INTRO VIDEO</h3>
 
             </div>
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
@@ -330,13 +330,13 @@
 
 
             <div class="col-1"></div>
-            <div class="col-1 mt-4">
+            <div class="col-md-1 col-lg-1 col-12 mt-4">
 
                 <img src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
             </div>
 
 
-            <div class="col-8">
+            <div class=" col-md-8 col-lg-8 col-sm-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
                     <div class="carousel-inner">
@@ -394,22 +394,22 @@
             </div>
 
 
-            <div class="col-1 mt-4">
+            <div class="col-12 col-md-1 col-lg-1  mt-4">
 
                 <img src="{{ asset('Images/Asset 3.png') }}" style="width: 100%" alt="">
             </div>
 
         </div>
 
-        <div class="row">
+        <div class="row ">
 
             <div class="col-9">
 
 
             </div>
 
-            <div class="col-2">
-                <img class="mb-2" style="width: 80%" src="{{ asset('Images/Asset 5.png') }}">
+            <div class="col-12 col-md-2 col-lg-2 ">
+                <img class="mb-2 mt-3 mt-md-0 mt-lg-0" style="width: 80%" src="{{ asset('Images/Asset 5.png') }}">
             </div>
         </div>
 
@@ -419,12 +419,12 @@
 
             </div>
 
-            <div class="col-6">
+            <div class="col-12 mt- col-md-6 col-lg-6">
 
                 <img style="width: 100%" src="{{ asset('Images/Live Asset.JPG') }}">
             </div>
             <div class="col-1"></div>
-            <div class="col-2">
+            <div class="col-sm-12 mt-3 mt-md-0 mt-lg-0 col-md-2 col-lg-2 ">
 
 
 
@@ -456,15 +456,15 @@
 
         <div class="row">
 
-          <div class="col-md-2 col-lg-2 ">
+          <div class="col-md-2 col-lg-2 col-sm-2 ">
 
           </div>
 
 
-          <div class="col-md-1 col-lg-1 col-sm-4 col-xs-4">
-            <img class="img-fluid" style="border-radius: 50%;" src="{{asset('Images/Danjo Logo.jpg')}}" alt="Avatar" >
+          <div class="col-md-1 col-lg-1 col-sm-2">
+            <img class="width:100%" style="border-radius: 50%;" src="{{asset('Images/Danjo Logo.jpg')}}" alt="Avatar" >
           </div>
-          <div class="col-md-4 mt-3 ml-n3 col-lg-4 col-sm-8 ">
+          <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-sm-8 ">
 <h6 style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h6>
           </div>
 
