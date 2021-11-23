@@ -318,8 +318,8 @@
     </div>
 
 
-    <div class="container-fluid con3" style="background:url('{{asset('Images/HOMEPAGE BACKGROUND.jpg')}}');    background-size: cover;">
-      {{-- <div class="container-fluid con3" style=""> --}}
+    {{-- <div class="container-fluid con3" style="background:url('{{asset('Images/HOMEPAGE BACKGROUND.jpg')}}');    background-size: cover;"> --}}
+      <div class="container-fluid con3" style="">
       <div class="row">
         <div class="col-12" style="text-align: center">
       <img src="{{asset('Images/Asset 6.png')}}" style="margin-top: -9%;" class="text-center" alt="">
