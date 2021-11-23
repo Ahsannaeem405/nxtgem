@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <title>@section('title')  @show</title>
@@ -103,10 +105,36 @@ body {
     display: none;
  }
 
+
+ .advertise_styling{
+   font-size: 40px;
+   background-color:#18c7fc;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: 100px;
+ }
+ .advertise_back_color{
+  background-color: #1295db
+}
   </style>
   <body>
     <div id="preloader"></div>
     @section('header')
+
+    <div class="advertise_back_color">
+
+    
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-10 text-center advertise_styling">
+            Advertising
+  
+   </div>
+        </div>
+        
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">GEM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -162,11 +190,14 @@ body {
 
 
     @section('footer')
+
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+
+
+<footer class="page-footer font-small  blue pt-4">
 
     <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
+    <div class="container text-center text-md-left">
 
       <!-- Grid row -->
       <div class="row p-2">
