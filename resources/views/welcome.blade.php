@@ -268,7 +268,7 @@
 
             <source src="{{asset('Images/2nd.mp4')}}" type="video/mp4">
 
-            <source src="{{asset('images/2nd.mp4')}}" type="video/ogg">
+            <source src="{{asset('Images/2nd.mp4')}}" type="video/ogg">
 
           Your browser does not support the video tag.
 
@@ -475,7 +475,7 @@
         <div class="row">
           <div class="col-md-12">
           <h3 class="text-center">
-            <img class="" src="{{asset('/images/Asset 9.png')}}" alt="">
+            <img class="" src="{{asset('/Images/Asset 9.png')}}" alt="">
           </h3>
           </div>
           
@@ -486,15 +486,15 @@
           
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-md-3 col_margin">
-                  <img class="img_sizing" style="width: 100%" src="{{asset('/images/Blog 1.jpg')}}" alt="">  
+                  <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 1.jpg')}}" alt="">  
                   <p class="story_heading"> lor dajksf a kja fjkas</p>
         </div>
         <div class="col-md-3 col_margin">
-          <img class="img_sizing" style="width: 100%" src="{{asset('/images/Blog 2.jpg')}}" alt="">  
+          <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 2.jpg')}}" alt="">  
                   <p class="story_heading"> lor dajksf a kja fjkas</p>  
         </div>
         <div class="col-md-3 col_margin">
-          <img class="img_sizing" style="width: 100%" src="{{asset('/images/Blog 3.jpg')}}" alt="">  
+          <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 3.jpg')}}" alt="">  
                   <p class="story_heading"> lor dajksf a kja fjkas</p>  
         </div>
         </div>
@@ -503,7 +503,7 @@
         <div class="row">
           <div class="col-lg-12">
               <h3 class="text-center heading">
-                <img class="" src="{{asset('/images/Asset 10.png')}}" alt="">
+                <img class="" src="{{asset('/Images/Asset 10.png')}}" alt="">
               </h3>
       
           </div>
@@ -511,9 +511,9 @@
       </div>
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-3 text-center team_img_pading">
-                <img class="img_sizing_team" src="{{asset('/images/2x/1.png')}}" alt="">  
+                <img class="img_sizing_team" src="{{asset('/Images/2x/1.png')}}" alt="">  
                 <h2 class="team_name">
-                  <img class="team_name_picture" src="{{asset('/images/2x/7.png')}}" alt="">
+                  <img class="team_name_picture" src="{{asset('/Images/2x/7.png')}}" alt="">
                 </h2>
                 <p class='intro_para'>
                   Hy i am a hr of conmpany
@@ -526,9 +526,9 @@
                 </h4>
       </div>
       <div class="col-md-3 text-center team_img_pading">
-        <img class="img_sizing_team" src="{{asset('/images/2x/2.png')}}" alt="">  
+        <img class="img_sizing_team" src="{{asset('/Images/2x/2.png')}}" alt="">  
         <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/images/2x/8.png')}}" alt="">
+          <img class="team_name_picture" src="{{asset('/Images/2x/8.png')}}" alt="">
         </h2>
         <p class='intro_para'>
           Hy i am a hr of conmpany
@@ -541,9 +541,9 @@
         </h4>
       </div>
       <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/images/2x/3.png')}}" alt="">  
+        <img class="img_sizing_team" src="{{asset('/Images/2x/3.png')}}" alt="">  
         <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/images/2x/9.png')}}" alt="">
+          <img class="team_name_picture" src="{{asset('/Images/2x/9.png')}}" alt="">
         </h2>
         <p class='intro_para'>
           Hy i am a hr of conmpany
@@ -558,9 +558,9 @@
       </div>
       <div class="row  d-flex align-items-center justify-content-center">
         <div class="col-md-3 team_img_pading text-center">
-          <img class="img_sizing_team" src="{{asset('/images/2x/4.png')}}" alt="">  
+          <img class="img_sizing_team" src="{{asset('/Images/2x/4.png')}}" alt="">  
           <h2 class="team_name">
-            <img class="team_name_picture" src="{{asset('/images/2x/9.png')}}" alt="">
+            <img class="team_name_picture" src="{{asset('/Images/2x/9.png')}}" alt="">
           </h2>
           <p class='intro_para'>
             Hy i am a hr of conmpany
@@ -573,9 +573,9 @@
           </h4>
       </div>
       <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/images/2x/5.png')}}" alt="">  
+        <img class="img_sizing_team" src="{{asset('/Images/2x/5.png')}}" alt="">  
         <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/images/2x/11.png')}}" alt="">
+          <img class="team_name_picture" src="{{asset('/Images/2x/11.png')}}" alt="">
         </h2>
       <p class='intro_para'>
         Hy i am a hr of conmpany
