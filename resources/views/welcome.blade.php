@@ -588,9 +588,9 @@
       </h4>
       </div>
       <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/images/2x/6.png')}}" alt="">  
+        <img class="img_sizing_team" src="{{asset('/Images/2x/6.png')}}" alt="">  
         <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/images/2x/12.png')}}" alt="">
+          <img class="team_name_picture" src="{{asset('/Images/2x/12.png')}}" alt="">
         </h2>
       <p class='intro_para'>
         Hy i am a hr of conmpany
@@ -610,11 +610,11 @@
       <div class="row">
         <div class="col-lg-12">
           <h3 class="text-center heading">
-            <img class="partners" src="{{asset('/images/OUR PARTNERS.png')}}" alt="">
+            <img class="partners" src="{{asset('/Images/OUR PARTNERS.png')}}" alt="">
           </h3>
       <div class="col-lg-12">
               <div class="text-center">
-                <img class="question_mark" src="{{asset('/images/QUESTION MARK.png')}}" alt="">
+                <img class="question_mark" src="{{asset('/Images/QUESTION MARK.png')}}" alt="">
               </div>
       </div>
       </div>
