@@ -188,56 +188,69 @@
         right: 23% !important;
     } */
 
-    .col_margin{
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.img_sizing{
-      
-      height: 300px; 
-      box-shadow: 10px 10px 18px #888888;
+    .col_margin {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
-    .story_heading{
-  padding-top: 20px;text-align: center;justify-content: center;color: white;font-size: 20px
-}
+    .img_sizing {
+
+        height: 300px;
+        box-shadow: 10px 10px 18px #888888;
+    }
+
+    .story_heading {
+        padding-top: 20px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px
+    }
 
 
-.heading{
+    .heading {
         margin-top: 10%;
     }
 
-    .team_img_pading{
-  margin: 20px;
-}
+    .team_img_pading {
+        margin: 20px;
+    }
 
-.img_sizing_team{
-  border-radius: 50%;width:150px;height: 150px;box-shadow: 5px 5px  18px #888888;
+    .img_sizing_team {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        box-shadow: 5px 5px 18px #888888;
 
-}
+    }
 
-.team_name{
-  margin-top: 8px;
-}
+    .team_name {
+        margin-top: 8px;
+    }
 
-.team_name_picture{
-  height: 30px;
-}
-
-
-.question_mark{
-  height: 300px;width: 200px;margin-bottom: 90px;color:white
-}
-.partners{
-  width: 600px;
-}
+    .team_name_picture {
+        height: 30px;
+    }
 
 
-.fa_icon{
-  background-color: white;border-radius: 20%;
-  padding: 4px;
-}
+    .question_mark {
+        height: 300px;
+        width: 200px;
+        margin-bottom: 90px;
+        color: white
+    }
+
+    .partners {
+        width: 600px;
+    }
+
+
+    .fa_icon {
+        background-color: white;
+        border-radius: 20%;
+        padding: 4px;
+    }
+
 </style>
 @section('content')
 
@@ -253,8 +266,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-xl " role="document">
                 <div class="modal-content" style="    background: no-repeat;
-                  border: 0px
-              ;">
+                      border: 0px
+                  ;">
                     <div class="modal-header" style="border: 0px">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="close mt-3  " style="    color: transparent;    margin-right: 15%;"
@@ -302,8 +315,8 @@
         </div>
         <div class="row">
             <div class="col-lg-11 col-md-11 col-sm-6">
-                <h3 class="text-center heading" style="letter-spacing: 15px; ">INTRO VIDEO</h3>
-
+                <h1 class="text-center heading ml-5" style="letter-spacing: 15px; ">INTRO VIDEO</h1>
+                <br>
             </div>
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
                 <a href="#"><i class="fab fa-discord"></i></a><br>
@@ -314,39 +327,40 @@
                 <a href="#"><i class="fab fa-discord"></i></a><br>
             </div>
         </div>
-
+        <br>
     </div>
 
 
     {{-- <div class="container-fluid con3" style="background:url('{{asset('Images/HOMEPAGE BACKGROUND.jpg')}}');    background-size: cover;"> --}}
-      <div class="container-fluid con3" style="">
-      <div class="row">
-        <div class="col-12" style="text-align: center">
-      <img src="{{asset('Images/Asset 6.png')}}" style="margin-top: -9%;    max-width: 100%;" class="text-center" alt="">
-    </div>
-    </div>
+    <div class="container-fluid con3" style="">
+        <div class="row">
+            <div class="col-12" style="text-align: center">
+                <img src="{{ asset('Images/Asset 6.png') }}" style="margin-top: -10%;    max-width: 100%;"
+                    class="text-center" alt="">
+            </div>
+        </div>
         <br><br>
         <div class="row">
 
 
             <div class="col-1"></div>
-            <div class="col-md-1 col-lg-1 col-12 mt-4">
+            <div class="col-md-1  col-lg-1 col-12 mt-4">
 
-                <img src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
+                <img class="mt-3" src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
             </div>
 
 
-            <div class=" col-md-8 col-lg-8 col-sm-12">
+            <div class=" col-md-8 mt-n4 mt-lg-0  col-lg-8 col-sm-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active mt-n5  mt-lg-0">
                             <div class="row">
 
 
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box">
+                                        <div class="img-box mt-4 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 12.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -456,169 +470,197 @@
 
         <div class="row">
 
-          <div class="col-md-2 col-lg-2 col-sm-2 ">
+            <div class="col-md-2 col-lg-2 col-sm-2 ">
 
-          </div>
+            </div>
 
 
-          <div class="col-md-1 col-lg-1 col-sm-2">
-            <img class="width:100%" style="border-radius: 50%;" src="{{asset('Images/Danjo Logo.jpg')}}" alt="Avatar" >
-          </div>
-          <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-sm-8 ">
-<h6 style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h6>
-          </div>
+            <div class="col-md-1 col-lg-1 col-sm-2">
+                <img class="width:100%" style="border-radius: 50%;" src="{{ asset('Images/Danjo Logo.jpg') }}"
+                    alt="Avatar">
+            </div>
+            <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-sm-8 ">
+                <h6 class="ml-5 ml-lg-0" style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h6>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col-12 col-md-12 col-lg-12"
+                style="    background: linear-gradient(to left, #009999 0%, #006699 100%)">
+
+                <div class="row">
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 text-center " style="    background: #007199;
+                    width: 0;
+                    height: 0px;
+                    border-bottom: 100px solid #000000;
+                    border-right: 53px solid transparent;padding-bottom: 3px;">
+                        <br>
+                        <h6 class="mt-3" style="color: white">AD BANNER</h6>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 text-center">
+                        <br>
+                        <h1 style="color: White">ADVERTISEMENT HEADLINE</h1>
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">
+                    <img class="" src="{{ asset('/Images/Asset 9.png') }}" style="max-width: 100%" alt="">
+                </h3>
+            </div>
 
         </div>
 
 
 
-        <div class="row">
-          <div class="col-md-12">
-          <h3 class="text-center">
-            <img class="" src="{{asset('/Images/Asset 9.png')}}" style="max-width: 100%" alt="">
-          </h3>
-          </div>
-          
-          </div>
-       
-      
-      
-          
+
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-md-3 col_margin">
-                  <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 1.jpg')}}" alt="">  
-                  <p class="story_heading"> lor dajksf a kja fjkas</p>
-        </div>
-        <div class="col-md-3 col_margin">
-          <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 2.jpg')}}" alt="">  
-                  <p class="story_heading"> lor dajksf a kja fjkas</p>  
-        </div>
-        <div class="col-md-3 col_margin">
-          <img class="img_sizing" style="width: 100%" src="{{asset('/Images/Blog 3.jpg')}}" alt="">  
-                  <p class="story_heading"> lor dajksf a kja fjkas</p>  
-        </div>
+            <div class="col-md-3 col_margin">
+                <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 1.jpg') }}" alt="">
+                <p class="story_heading"> lor dajksf a kja fjkas</p>
+            </div>
+            <div class="col-md-3 col_margin">
+                <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 2.jpg') }}" alt="">
+                <p class="story_heading"> lor dajksf a kja fjkas</p>
+            </div>
+            <div class="col-md-3 col_margin">
+                <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 3.jpg') }}" alt="">
+                <p class="story_heading"> lor dajksf a kja fjkas</p>
+            </div>
         </div>
 
 
         <div class="row">
-          <div class="col-lg-12">
-              <h3 class="text-center heading">
-                <img class="" src="{{asset('/Images/Asset 10.png')}}" style="    max-width: 100%;" alt="">
-              </h3>
-      
-          </div>
-      
-      </div>
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-md-3 text-center team_img_pading">
-                <img class="img_sizing_team" src="{{asset('/Images/2x/1.png')}}" alt="">  
+            <div class="col-lg-12">
+                <h3 class="text-center heading">
+                    <img class="" src="{{ asset('/Images/Asset 10.png') }}" style="    max-width: 100%;"
+                        alt="">
+                </h3>
+
+            </div>
+
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-3 text-center team_img_pading">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/1.png') }}" alt="">
                 <h2 class="team_name">
-                  <img class="team_name_picture" src="{{asset('/Images/2x/7.png')}}" alt="">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/7.png') }}" alt="">
                 </h2>
                 <p class='intro_para'>
-                  Hy i am a hr of conmpany
+                    Hy i am a hr of conmpany
                 </p>
                 <h4 class="team_contact_icon">
-                  <i class="fab fa_icon fa-facebook"></i>
-                  <i class="fab fa_icon fa-google-plus"></i>
-                  <i class="fab fa_icon fa-twitter"></i>
-                  <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
                 </h4>
-      </div>
-      <div class="col-md-3 text-center team_img_pading">
-        <img class="img_sizing_team" src="{{asset('/Images/2x/2.png')}}" alt="">  
-        <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/Images/2x/8.png')}}" alt="">
-        </h2>
-        <p class='intro_para'>
-          Hy i am a hr of conmpany
-        </p>
-        <h4 class="team_contact_icon">
-          <i class="fab fa_icon fa-facebook"></i>
-          <i class="fab fa_icon fa-google-plus"></i>
-          <i class="fab fa_icon fa-twitter"></i>
-          <i class="fab fa_icon fa-whatsapp"></i>
-        </h4>
-      </div>
-      <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/Images/2x/3.png')}}" alt="">  
-        <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/Images/2x/9.png')}}" alt="">
-        </h2>
-        <p class='intro_para'>
-          Hy i am a hr of conmpany
-        </p>
-        <h4 class="team_contact_icon">
-          <i class="fab fa_icon fa-facebook"></i>
-          <i class="fab fa_icon fa-google-plus"></i>
-          <i class="fab fa_icon fa-twitter"></i>
-          <i class="fab fa_icon fa-whatsapp"></i>
-        </h4>
-      </div>
-      </div>
-      <div class="row  d-flex align-items-center justify-content-center">
-        <div class="col-md-3 team_img_pading text-center">
-          <img class="img_sizing_team" src="{{asset('/Images/2x/4.png')}}" alt="">  
-          <h2 class="team_name">
-            <img class="team_name_picture" src="{{asset('/Images/2x/9.png')}}" alt="">
-          </h2>
-          <p class='intro_para'>
-            Hy i am a hr of conmpany
-          </p>
-          <h4 class="team_contact_icon">
-            <i class="fab fa_icon fa-facebook"></i>
-            <i class="fab fa_icon fa-google-plus"></i>
-            <i class="fab fa_icon fa-twitter"></i>
-            <i class="fab fa_icon fa-whatsapp"></i>
-          </h4>
-      </div>
-      <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/Images/2x/5.png')}}" alt="">  
-        <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/Images/2x/11.png')}}" alt="">
-        </h2>
-      <p class='intro_para'>
-        Hy i am a hr of conmpany
-      </p>
-      <h4 class="team_contact_icon">
-        <i class="fab fa_icon fa-facebook"></i>
-        <i class="fab fa_icon fa-google-plus"></i>
-        <i class="fab fa_icon fa-twitter"></i>
-        <i class="fab fa_icon fa-whatsapp"></i>
-      </h4>
-      </div>
-      <div class="col-md-3 team_img_pading text-center">
-        <img class="img_sizing_team" src="{{asset('/Images/2x/6.png')}}" alt="">  
-        <h2 class="team_name">
-          <img class="team_name_picture" src="{{asset('/Images/2x/12.png')}}" alt="">
-        </h2>
-      <p class='intro_para'>
-        Hy i am a hr of conmpany
-      </p>
-      <h4 class="team_contact_icon">
-        <i class="fab fa_icon fa-facebook"></i>
-        <i class="fab fa_icon fa-google-plus"></i>
-        <i class="fab fa_icon fa-twitter"></i>
-        <i class="fab fa_icon fa-whatsapp"></i>
-      </h4>
-      
-      </div>
-      </div>
+            </div>
+            <div class="col-md-3 text-center team_img_pading">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/2.png') }}" alt="">
+                <h2 class="team_name">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/8.png') }}" alt="">
+                </h2>
+                <p class='intro_para'>
+                    Hy i am a hr of conmpany
+                </p>
+                <h4 class="team_contact_icon">
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
+                </h4>
+            </div>
+            <div class="col-md-3 team_img_pading text-center">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/3.png') }}" alt="">
+                <h2 class="team_name">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/9.png') }}" alt="">
+                </h2>
+                <p class='intro_para'>
+                    Hy i am a hr of conmpany
+                </p>
+                <h4 class="team_contact_icon">
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
+                </h4>
+            </div>
+        </div>
+        <div class="row  d-flex align-items-center justify-content-center">
+            <div class="col-md-3 team_img_pading text-center">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/4.png') }}" alt="">
+                <h2 class="team_name">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/9.png') }}" alt="">
+                </h2>
+                <p class='intro_para'>
+                    Hy i am a hr of conmpany
+                </p>
+                <h4 class="team_contact_icon">
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
+                </h4>
+            </div>
+            <div class="col-md-3 team_img_pading text-center">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/5.png') }}" alt="">
+                <h2 class="team_name">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/11.png') }}" alt="">
+                </h2>
+                <p class='intro_para'>
+                    Hy i am a hr of conmpany
+                </p>
+                <h4 class="team_contact_icon">
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
+                </h4>
+            </div>
+            <div class="col-md-3 team_img_pading text-center">
+                <img class="img_sizing_team" src="{{ asset('/Images/2x/6.png') }}" alt="">
+                <h2 class="team_name">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/12.png') }}" alt="">
+                </h2>
+                <p class='intro_para'>
+                    Hy i am a hr of conmpany
+                </p>
+                <h4 class="team_contact_icon">
+                    <i class="fab fa_icon fa-facebook"></i>
+                    <i class="fab fa_icon fa-google-plus"></i>
+                    <i class="fab fa_icon fa-twitter"></i>
+                    <i class="fab fa_icon fa-whatsapp"></i>
+                </h4>
+
+            </div>
+        </div>
 
 
 
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="text-center heading">
-            <img class="partners" src="{{asset('/Images/OUR PARTNERS.png')}}" style="max-width: 100%" alt="">
-          </h3>
-      <div class="col-lg-12">
-              <div class="text-center">
-                <img class="question_mark" src="{{asset('/Images/QUESTION MARK.png')}}" alt="">
-              </div>
-      </div>
-      </div>
-      </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center heading">
+                    <img class="partners" src="{{ asset('/Images/OUR PARTNERS.png') }}" style="max-width: 100%"
+                        alt="">
+                </h3>
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <img class="question_mark" src="{{ asset('/Images/QUESTION MARK.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

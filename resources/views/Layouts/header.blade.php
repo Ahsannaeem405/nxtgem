@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="
+overflow-x: hidden;">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -116,27 +117,50 @@ body {
  .advertise_back_color{
   background-color: #1295db
 }
+
+@media only screen and (max-width: 768px) {
+
+  #abc{
+
+display: none;
+}
+
+#abc1{
+
+display: none;
+}
+
+}
+.logo_sizing{
+  width: 50px;
+  height: 50px;
+}
   </style>
-  <body>
+  <body style="
+  overflow-x: hidden;">
     <div id="preloader"></div>
     @section('header')
 
     <div class="advertise_back_color">
 
-    
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-md-10 text-center advertise_styling">
             Advertising
-  
+            <i style="float: right;color: #b5aaa094;font-size: 31px;" class="fas fa-times"></i>
    </div>
+
+ 
         </div>
         
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">GEM</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px" >
+        <a class="navbar-brand" href="#">
+
+          <img class="logo_sizing ml-2 " src="{{asset('/images/122.jpg')}}" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -170,15 +194,33 @@ body {
 
 
           </ul>
-          <ul class="navbar-nav ml-auto">
-              <div class="p-2 pl-5 text-center search">
-                <form class="form-inline my-2 my-lg-0" style="float:right">
-                    <input type="text" class="example" placeholder="Search.." name="search">
-                    <button type="submit" class="button"><i class="fa fa-search"></i></button>
-                  </form>
-              </div>
 
-          </ul>
+          <div id="abc1" style=" 
+          height: 0px;
+          border-bottom: 55px solid #D4ECF4;
+          border-left: 50px solid transparent;">
+          
+          <form class="form-inline my-2 my-lg-0" style="float:right">
+                 
+            <div id="abc" style=" 
+            height: 0px;
+            border-bottom: 55px solid black;
+            border-left: 50px solid transparent;">
+            <input type="text" style="    border: 0px;    padding-bottom: 2px;" class="example mt-2" placeholder="Search.." name="search">
+           
+          
+            <button style="padding-bottom: 6px;    border: 0px;"  type="submit" class="button mt-2"><i class="fa fa-search"></i></button>
+          </div>
+
+                 
+          <div style=" 
+          height: 0px;
+          border-bottom: 55px solid #D4ECF4;
+          border-right: 50px solid transparent;">
+          </div>
+          </form>
+        </div>
+        
 
 
         </div>
@@ -234,7 +276,7 @@ body {
 
           <ul class="list-unstyled">
             <li>
-              <p>If you have any thoughts or questions you'd like to share with us, send us a mail to contact@nxgem,io or get in touch with us through our social media channels.</p>
+              <p>If you have any thoughts or questions you'd like to share with us, send us a mail to <span style="color: #1495BF"> contact@nxgem.io</span> or get in touch with us through our social media channels.</p>
             </li>
 
 
@@ -252,7 +294,7 @@ body {
                 <input type="text" class="form-control" placeholder="Email">
               </li>
               <li class="mt-2">
-               <button class="form-control btn_sub">SUBSCRIBE TO OUR NEWSLETTER</button>
+               <button style="border: 0px;" class="form-control btn_sub">SUBSCRIBE TO OUR NEWSLETTER</button>
               </li>
 
 
