@@ -313,6 +313,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-lg-11 col-md-11 col-sm-6">
                 <h1 class="text-center heading ml-5" style="letter-spacing: 15px; ">INTRO VIDEO</h1>
@@ -331,7 +332,7 @@
     </div>
 
 
-    <div class="container-fluid con3" style="background:url('{{asset('Images/Optimized.jpg')}}');    background-size: cover;">
+    <div class="container-fluid con3" style="background:url('{{asset('Images/a.png')}}');  background-color: #1295BD !important;  ">
     {{-- <div class="container-fluid con3" style=""> --}}
         <div class="row">
             <div class="col-12" style="text-align: center">
