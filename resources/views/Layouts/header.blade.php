@@ -133,7 +133,7 @@ display: none;
 }
 .logo_sizing{
   width: 50px;
-  height: 50px;
+  height: 45px;
 }
   </style>
   <body style="
