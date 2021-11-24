@@ -321,10 +321,10 @@
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
                 <a href="#"><i class="fab fa-discord"></i></a><br>
                 <a href="#"><i class="fab fa-discord"></i></a><br>
+                <a href="#"><i class="fab fa-twitter-square"></i></a><br>
                 <a href="#"><i class="fab fa-discord"></i></a><br>
-                <a href="#"><i class="fab fa-discord"></i></a><br>
-                <a href="#"><i class="fab fa-discord"></i></a><br>
-                <a href="#"><i class="fab fa-discord"></i></a><br>
+                <a href="#"><i class="fab fa-youtube-square"></i></a><br>
+                <a href="#"><i class="fab fa-linkedin"></i></a><br>
             </div>
         </div>
         <br>
