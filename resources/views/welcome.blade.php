@@ -360,7 +360,7 @@
 
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-5 mt-lg-0">
+                                        <div class="img-box mt-3 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 12.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
