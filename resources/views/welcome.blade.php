@@ -346,7 +346,7 @@
             <div class="col-1"></div>
             <div class="col-md-1  col-lg-1 col-12 mt-4">
 
-                <img class="mt-3" src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
+                <img class="mt-3 mb-5 mb-lg-0" src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
             </div>
 
 
@@ -360,7 +360,7 @@
 
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-4 mt-lg-0">
+                                        <div class="img-box mt-5 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 12.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -370,7 +370,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box">
+                                        <div class="img-box mt-3 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 2.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -380,7 +380,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box">
+                                        <div class="img-box mt-3 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 11.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -408,9 +408,9 @@
             </div>
 
 
-            <div class="col-12 col-md-1 col-lg-1  mt-4">
+            <div class="col-12 col-md-1 col-lg-1 mt-4 ">
 
-                <img src="{{ asset('Images/Asset 3.png') }}" style="width: 100%" alt="">
+                <img class="mt-3" src="{{ asset('Images/Asset 3.png') }}" style="width: 100%" alt="">
             </div>
 
         </div>
