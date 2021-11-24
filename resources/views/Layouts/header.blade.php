@@ -197,7 +197,7 @@ display: none;
 
           <div id="abc1" style=" 
           height: 0px;
-          border-bottom: 55px solid #D4ECF4;
+          border-bottom: 55px solid #00D7FE;
           border-left: 50px solid transparent;">
           
           <form class="form-inline my-2 my-lg-0" style="float:right">
@@ -215,7 +215,7 @@ display: none;
                  
           <div style=" 
           height: 0px;
-          border-bottom: 55px solid #D4ECF4;
+          border-bottom: 55px solid #00D7FE;
           border-right: 50px solid transparent;">
           </div>
           </form>
