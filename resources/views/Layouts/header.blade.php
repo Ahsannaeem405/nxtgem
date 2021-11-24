@@ -159,7 +159,7 @@ display: none;
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px" >
         <a class="navbar-brand" href="#">
 
-          <img class="logo_sizing ml-2 " src="{{asset('/images/122.jpg')}}" alt="">
+          <img class="logo_sizing ml-2 " src="{{asset('Images/122.jpg')}}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
