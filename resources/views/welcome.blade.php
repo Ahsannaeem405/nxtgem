@@ -127,7 +127,7 @@
         z-index: 5;
         left: 0;
         right: 0;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0);
         text-shadow: none;
         font-weight: bold;
     }
@@ -204,7 +204,7 @@
         text-align: center;
         justify-content: center;
         color: white;
-        font-size: 20px
+        font-size: 18px
     }
 
 
@@ -251,23 +251,61 @@
         padding: 4px;
     }
 
+
+
+    @media screen and (min-width: 1440px) {
+  /* .dyor {
+    margin-top: 0px !important;
+  }
+
+  .mt-3, .my-3 {
+    margin-top: 0rem !important;
+} */
+
+
+.carousel-control-prev{
+
+    top: 13px !important;
+}
+
+
+.carousel-control-next{
+
+    top: 13px !important; 
+}
+}
+
+
+/* @media screen and (min-width: 768px) {
+
+
+
+.carousel-control-prev{
+
+    top: 26px !important;
+}
+
+
+.carousel-control-next{
+
+    top: 26px !important; 
+}
+} */
 </style>
 @section('content')
 
 
     <div class="container-fluid con2">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary video" data-toggle="modal" data-target="#exampleModal">
+        {{-- <button type="button" class="btn btn-primary video" data-toggle="modal" data-target="#exampleModal">
             Launch demo modal
-        </button>
+        </button> --}}
 
         <!-- Modal -->
-        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        {{-- <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-xl " role="document">
-                <div class="modal-content" style="    background: no-repeat;
-                      border: 0px
-                  ;">
+                <div class="modal-content" style="    background: no-repeat;border: 0px;">
                     <div class="modal-header" style="border: 0px">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="close mt-3  " style="    color: transparent;    margin-right: 15%;"
@@ -276,16 +314,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        {{-- <video type="video/mp4" src="{{asset('Images/2nd - Coming Soon Video (Convert to GIF + Add Music).mp4')}}"></video> --}}
-                        {{-- <video  width="320" height="240"controls="controls autoplay">
-
-            <source src="{{asset('Images/2nd.mp4')}}" type="video/mp4">
-
-            <source src="{{asset('Images/2nd.mp4')}}" type="video/ogg">
-
-          Your browser does not support the video tag.
-
-          </video> --}}
+                
 
                         <div class="row">
 
@@ -306,24 +335,37 @@
 
                         </div>
                     </div>
-                    {{-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> --}}
+              
                 </div>
             </div>
-        </div>
+        </div> --}}
         
         <div class="row">
-            <div class="col-lg-11 col-md-11 col-sm-6">
+            {{-- <div class="col-lg-11 col-md-11 col-sm-6">
                 <h1 class="text-center heading ml-5" style="letter-spacing: 15px; ">INTRO VIDEO</h1>
                 <br>
+            </div> --}}
+
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-6 mt-2 col-md-6 col-sm-6">
+                <video controls width="100%">
+
+                    <source src="{{ asset('Images/2nd.mp4') }}" type="video/webm">
+
+                    <source src="{{ asset('Images/2nd.mp4') }}" type="video/mp4">
+
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
             </div>
+
+            <div class="col-lg-2 col-md-2"></div>
+
+            
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
                 <a href="#"><i class="fab fa-discord"></i></a><br>
-                <a href="#"><i class="fab fa-discord"></i></a><br>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a><br>
                 <a href="#"><i class="fab fa-twitter-square"></i></a><br>
-                <a href="#"><i class="fab fa-discord"></i></a><br>
+                <a href="#"><i  class="fas fa-infinity"></i></a><br>
                 <a href="#"><i class="fab fa-youtube-square"></i></a><br>
                 <a href="#"><i class="fab fa-linkedin"></i></a><br>
             </div>
@@ -332,11 +374,11 @@
     </div>
 
 
-    <div class="container-fluid con3" style="background:url('{{asset('Images/a.png')}}');  background-color: #1295BD !important;  ">
+    <div class="container-fluid con3" style="background:url('{{asset('Images/a.png')}}');  background-color: #1295BD !important;    background-repeat: no-repeat;  ">
     {{-- <div class="container-fluid con3" style=""> --}}
         <div class="row">
             <div class="col-12" style="text-align: center">
-                <img src="{{ asset('Images/Asset 6.png') }}" style="margin-top: -10%;    max-width: 100%;"
+                <img src="{{ asset('Images/Asset 6.png') }}" style="margin-top: -2%;    max-width: 100%;"
                     class="text-center" alt="">
             </div>
         </div>
@@ -345,9 +387,9 @@
 
 
             <div class="col-1"></div>
-            <div class="col-md-1  col-lg-1 col-12 mt-4">
+            <div class="col-md-1  col-lg-1 col-12 mt-4 text-center">
 
-                <img class="mt-3 mb-5 mb-lg-0" src="{{ asset('Images/Asset 4.png') }}" style="width: 100%" alt="">
+                <img class="mt-3 mt-md-2   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 4.png') }}" style="max-width: 100%" alt="">
             </div>
 
 
@@ -361,7 +403,7 @@
 
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-3 mt-lg-0">
+                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 12.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -371,7 +413,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-3 mt-lg-0">
+                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 2.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -381,7 +423,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-3 mt-lg-0">
+                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 11.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -395,10 +437,12 @@
 
                     </div>
                     <!-- Carousel controls -->
-                    <a class="carousel-control-prev" style="    top: 26px;" href="#myCarousel" data-slide="prev">
+                    <a class="carousel-control-prev" style="    background: white;
+                    opacity: 1;    top: 26px;" href="#myCarousel" data-slide="prev">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a class="carousel-control-next" style="    top: 26px;" href="#myCarousel" data-slide="next">
+                    <a class="carousel-control-next" style="    background: white;
+                    opacity: 1;    top: 26px;" href="#myCarousel" data-slide="next">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
@@ -409,9 +453,9 @@
             </div>
 
 
-            <div class="col-12 col-md-1 col-lg-1 mt-4 ">
+            <div class="col-12 col-md-1 col-lg-1 mt-4 text-center ">
 
-                <img class="mt-3" src="{{ asset('Images/Asset 3.png') }}" style="width: 100%" alt="">
+                <img class="mt-3 mt-md-2   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 3.png') }}" style="max-width: 100%" alt="">
             </div>
 
         </div>
@@ -436,7 +480,7 @@
 
             <div class="col-12 mt- col-md-6 col-lg-6">
 
-                <img style="width: 100%" src="{{ asset('Images/Live Asset.JPG') }}">
+                <img style="width: 100%;    box-shadow: 0 0 14px #3c3838;" src="{{ asset('Images/Live Asset.JPG') }}">
             </div>
             <div class="col-1"></div>
             <div class="col-sm-12 mt-3 mt-md-0 mt-lg-0 col-md-2 col-lg-2 ">
@@ -498,7 +542,7 @@
                     width: 0;
                     height: 0px;
                     border-bottom: 100px solid #000000;
-                    border-right: 53px solid transparent;padding-bottom: 3px;">
+                    border-right: 53px solid transparent;padding-bottom: 3px;s">
                         <br>
                         <h6 class="mt-3" style="color: white">AD BANNER</h6>
                     </div>
@@ -528,15 +572,15 @@
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-3 col_margin">
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 1.jpg') }}" alt="">
-                <p class="story_heading"> lor dajksf a kja fjkas</p>
+                <p class="story_heading"> What To Know About The Highly Anticipated Meta Thugs NFT Drop</p>
             </div>
             <div class="col-md-3 col_margin">
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 2.jpg') }}" alt="">
-                <p class="story_heading"> lor dajksf a kja fjkas</p>
+                <p class="story_heading" style="font-size: 16px !important;">The Mimir Token lists on Apaswap Polygon DEX with $MIMIR/USDT trading pair</p>
             </div>
             <div class="col-md-3 col_margin">
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 3.jpg') }}" alt="">
-                <p class="story_heading"> lor dajksf a kja fjkas</p>
+                <p class="story_heading">We have opened PVU: PVP for all users.</p>
             </div>
         </div>
 
@@ -557,14 +601,14 @@
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/7.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+               Co-Founder & CEO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
             <div class="col-md-3 text-center team_img_pading">
@@ -572,14 +616,14 @@
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/8.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+                    Co-Founder & CMO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
             <div class="col-md-3 team_img_pading text-center">
@@ -587,14 +631,14 @@
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/9.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+                    Co-Founder & COO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
         </div>
@@ -602,16 +646,16 @@
             <div class="col-md-3 team_img_pading text-center">
                 <img class="img_sizing_team" src="{{ asset('/Images/2x/4.png') }}" alt="">
                 <h2 class="team_name">
-                    <img class="team_name_picture" src="{{ asset('/Images/2x/9.png') }}" alt="">
+                    <img class="team_name_picture" src="{{ asset('/Images/2x/10.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+                    Co-Founder & CFO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
             <div class="col-md-3 team_img_pading text-center">
@@ -619,14 +663,14 @@
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/11.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+                    Co-Founder & CTO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
             <div class="col-md-3 team_img_pading text-center">
@@ -634,14 +678,14 @@
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/12.png') }}" alt="">
                 </h2>
-                <p class='intro_para'>
-                    Hy i am a hr of conmpany
+                <p class='intro_para' style="color: white">
+                    Co-Founder & CDO
                 </p>
                 <h4 class="team_contact_icon">
-                    <i class="fab fa_icon fa-facebook"></i>
-                    <i class="fab fa_icon fa-google-plus"></i>
-                    <i class="fab fa_icon fa-twitter"></i>
-                    <i class="fab fa_icon fa-whatsapp"></i>
+                    <i class="fab fa_icon fab fa-linkedin"></i>
+                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i class="fab fa_icon fab fa-telegram-plane"></i>
+                    <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
 
             </div>
