@@ -13,6 +13,9 @@ overflow-x: hidden;">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <title>@section('title') @show</title>
 
 </head>
@@ -39,7 +42,9 @@ overflow-x: hidden;">
     }
 
     .con {
-        border-top: 2px solid #05A9C5;
+        border-top: 2px solid linear-gradient(to left, #009999 0%, #006699 100%);
+
+          /* background: linear-gradient(to left, #009999 0%, #006699 100%)  */
     }
 
     .list-unstyled li a {
@@ -158,6 +163,32 @@ overflow-x: hidden;">
         height: 45px;
     }
 
+
+    @media only screen and (max-width: 425px) and (min-width: 320px)  {
+
+#footpara{
+
+float: left !important;
+}
+    }
+
+
+
+    @media only screen and (max-width: 425px) and (min-width: 320px) {
+
+.advertise_styling{
+
+
+    background-size: 100% 35px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.fa-times{
+    margin-top: 32px !important;
+    font-size: 14px !important;
+}
+    }
 </style>
 
 <body style="
@@ -190,7 +221,7 @@ overflow-x: hidden;">
 
                 <img class="logo_sizing  " src="{{ asset('Images/122preview.png') }}" alt="">
             </a>
-            <button class="navbar-toggler mt-2" style="float: right;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler mt-2" style="float: right;    background: deepskyblue;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -274,8 +305,8 @@ overflow-x: hidden;">
 
                             <div class="col-10" style="background-color: #1295BD;    display: flex;       width: 0;
                             height: 0;
-                            border-top: 80px solid black;
-                            border-right: 50px solid transparent;">
+                            border-top: 92px solid black;
+                            border-right: 40px solid transparent;">
 
 
 
@@ -341,9 +372,9 @@ overflow-x: hidden;">
 <form class="form-inline my-2 my-lg-0" style="float:right">
 
   <div id="abc" class="" style=" 
-height: 0px;    margin-top: 13px;
+height: 0px;    margin-top: 18px;
 border-bottom: 55px solid black;
-border-left: 35px solid transparent;">
+border-left: 23px solid transparent;">
       <input type="text" style="    border: 0px;    padding-bottom: 2px;" class="example mt-2"
           placeholder="Search.." name="search">
 
@@ -419,7 +450,7 @@ border-left: 35px solid transparent;">
 
                         <ul class="list-unstyled">
                             <li>
-                                <p>If you have any thoughts or questions you'd like to share with us, send us a mail to
+                                <p class="mt-4" style="font-size: 14px;">If you have any thoughts or questions you'd like to share with us, send us a mail to
                                     <span style="color: #1495BF"> contact@nxgem.io</span> or get in touch with us through
                                     our social media channels.
                                 </p>
@@ -430,7 +461,7 @@ border-left: 35px solid transparent;">
 
                     </div>
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-4 col-12 mb-md-0 mb-3">
+                    <div class="col-lg-4 col-md-4 pr-0 col-12 mb-md-0 mb-3">
 
                         <!-- Links -->
                         <h3 class="text-uppercase">Stay In Touch</h3>
@@ -462,7 +493,7 @@ border-left: 35px solid transparent;">
                         <p>Terms and Conditions | Privacy Policy | Disclaimer</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12 py-4">
-                        <p> © 2020 Copyright</p>
+                        <p style="float: right" id="footpara"> © 2021 All Rights Reserved</p>
                     </div>
 
                 </div>
@@ -484,6 +515,55 @@ border-left: 35px solid transparent;">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    
+    
+    
+
+    <script>
+
+$(document).ready(function(){
+
+$('.items').slick({
+dots: true,
+infinite: true,
+speed: 800,
+autoplay: true,
+autoplaySpeed: 2000,
+slidesToShow: 10,
+slidesToScroll: 10,
+responsive: [
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 6,
+slidesToScroll: 6,
+infinite: true,
+dots: true
+}
+},
+{
+breakpoint: 600,
+settings: {
+slidesToShow: 4,
+slidesToScroll: 4
+}
+},
+{
+breakpoint: 480,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 3
+}
+}
+
+]
+});
+});
+    </script>
+    
     <script>
         var preloader;
 
@@ -508,6 +588,8 @@ border-left: 35px solid transparent;">
             preload(1);
         });
     </script>
+
+    
 </body>
 
 </html>

@@ -4,41 +4,30 @@
     Home
 @endsection
 <style>
-    .con2 {
-        background-color: #CCf7FF;
-        height: auto;
-        display: block;
-    }
 
-    .heading {
-        margin-top: 10%;
-    }
+@media only screen and (max-width: 425px) and (min-width: 320px) {
 
-    .icons a {
-        font-size: 30px;
-        color: black;
-    }
-
-    .con1 {
-        margin-left: auto;
-        margin-right: auto;
-        display: none;
-    }
-
-    .video {
-        display: none !important;
-
-    }
+.secondslider{
 
 
-    .con3 {
-        background-color: #1295BD;
-        height: auto;
-        display: block;
-    }
+    display: block !important;
+}
 
+.icons{
+    padding-right: 0px !important;
+            margin-right: 0px !important;
+        text-align: right !important;
+           
 
-    .carousel {
+}
+
+#myCarousel{
+
+    display: none;
+}
+
+}
+.carousel {
         /* margin: 50px auto; */
         padding: 0 70px;
         margin-top: -6%;
@@ -182,6 +171,89 @@
         width: 4% !important;
     }
 
+    .con2 {
+        background-color: #CCf7FF;
+        height: auto;
+        display: block;
+    }
+
+    .heading {
+        margin-top: 10%;
+    }
+
+    .icons a {
+        font-size: 30px;
+        color: black;
+    }
+
+    .con1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    .video {
+        display: none !important;
+
+    }
+
+
+    .con3 {
+        background-color: #1295BD;
+        height: auto;
+        display: block;
+    }
+    .card {
+     /* position: relative;
+     display: flex;
+     width: 100px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #1295BD;
+     background-clip: border-box; */
+     
+    
+ }
+
+ .slick-slide{
+
+    border: 0px !important;
+ }
+
+
+
+ .card .card-body {
+     padding: 1rem 1rem;
+     background: #1295BD;
+ }
+
+ .slick-slide{
+
+    height: auto !important;
+ }
+
+ .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
+
+ .logo {
+     height: 67px
+ }
+
+ .items {
+     width: 90%;
+     margin: 0px auto;
+  
+ }
+
+ .slick-slide {
+     margin: 10px
+ }
+
+    
+
 
     /* .carousel-control-next {
 
@@ -195,8 +267,9 @@
 
     .img_sizing {
 
-        height: 300px;
+        height: 350px;
         box-shadow: 10px 10px 18px #3c3838;
+        object-fit: cover;
     }
 
     .story_heading {
@@ -233,6 +306,15 @@
     }
 
 
+    .dot {
+        height: 65px;
+        width: 65px;
+        background-color: black;
+        border-radius: 50%;
+
+    }
+
+
     .question_mark {
         height: 300px;
         width: 200px;
@@ -253,9 +335,14 @@
     }
 
 
+    .intro_para {
+
+        margin-bottom: 4px;
+    }
+
 
     @media screen and (min-width: 1440px) {
-  /* .dyor {
+        /* .dyor {
     margin-top: 0px !important;
   }
 
@@ -264,119 +351,128 @@
 } */
 
 
-.carousel-control-prev{
+        .carousel-control-prev {
 
-    top: -14px !important;
-}
-
-
-.carousel-control-next{
-
-    top: -14px !important; 
-}
-
-.settext{
-
-    margin-bottom: -135px;
-}
-
-.settext1{
-
-margin-bottom: -85px;
-}
-}
+            top: -14px !important;
+        }
 
 
-@media only screen and (max-width: 1200px) and (min-width: 992px)  {
+        .carousel-control-next {
 
-.dyor{
+            top: -14px !important;
+        }
 
-    margin-top: 14px !important;    
+        .settext {
 
-}
+            margin-bottom: -135px;
+        }
 
-}
+        .settext1 {
+
+            margin-bottom: -85px;
+        }
+    }
 
 
-@media only screen and (max-width: 800px) and (min-width: 768px)  {
+    @media only screen and (max-width: 1200px) and (min-width: 992px) {
 
-.dyor{
+        .dyor {
 
-    margin-top: 24px !important;    
+            margin-top: 14px !important;
 
-}
-
-.carousel-control-prev{
-
-    top: 48px !important;
-}
-
-.carousel-control-next{
-
-top: 48px !important;
-}
-
-}
+        }
 
 
 
-@media only screen and (max-width: 1400px) and (min-width: 1201px)  {
-
-.dyor{
-
-    margin-top: 15px !important;    
-
-}
-
-.settext{
-
-    margin-bottom: -102px;
-}
-.settext1{
-
-margin-bottom: -85px;
-}
-
-}
+    }
 
 
+    @media only screen and (max-width: 800px) and (min-width: 768px) {
 
-@media only screen and (max-width: 1100px) and (min-width: 992px)  {
+        .dyor {
 
-.dyor{
+            margin-top: 24px !important;
 
-    margin-top: 50px !important;    
+        }
 
-}
+        .carousel-control-prev {
 
-.carousel-control-prev{
+            top: 48px !important;
+        }
 
-    top:35px !important;
-}
+        .carousel-control-next {
+
+            top: 48px !important;
+        }
+
+    }
 
 
 
-.carousel-control-next{
+    @media only screen and (max-width: 1400px) and (min-width: 1201px) {
 
-top:35px !important;
-}
+        .dyor {
+
+            margin-top: 15px !important;
+
+        }
+
+        .ssdds {
+
+            margin-top: 12px !important;
+        }
+
+        .settext {
+
+            margin-bottom: -102px;
+        }
+
+        .settext1 {
+
+            margin-bottom: -85px;
+        }
+
+    }
 
 
-.settext{
 
-    margin-bottom: -94px;
-}
-.settext1{
+    @media only screen and (max-width: 1100px) and (min-width: 992px) {
 
-margin-bottom: -85px;
-}
-}
+        .dyor {
 
-}
+            margin-top: 50px !important;
+
+        }
+
+        .carousel-control-prev {
+
+            top: 35px !important;
+        }
 
 
 
-/* @media screen and (min-width: 768px) {
+        .carousel-control-next {
+
+            top: 35px !important;
+        }
+
+
+        .settext {
+
+            margin-bottom: -94px;
+        }
+
+        .settext1 {
+
+            margin-bottom: -85px;
+        }
+    }
+
+    }
+
+
+
+    /* @media screen and (min-width: 768px) {
 
 
 
@@ -391,6 +487,7 @@ margin-bottom: -85px;
     top: 26px !important; 
 }
 } */
+
 </style>
 @section('content')
 
@@ -439,18 +536,18 @@ margin-bottom: -85px;
                 </div>
             </div>
         </div> --}}
-        
+
         <div class="row">
             {{-- <div class="col-lg-11 col-md-11 col-sm-6">
                 <h1 class="text-center heading ml-5" style="letter-spacing: 15px; ">INTRO VIDEO</h1>
                 <br>
             </div> --}}
 
-     
-            <div class="col-lg-11 mt-5 col-md-11 text-center  col-sm-6 py-5">
 
-<h1 class="mt-2" style="    letter-spacing: 18px;">INTRO VIDEO</h1>
-                
+            <div class="col-lg-11 mt-5 col-md-11 text-center  col-8 py-5">
+
+                <h1 class="mt-2" style="    letter-spacing: 18px;">INTRO VIDEO</h1>
+
                 {{-- <video controls width="100%">
 
                     <source src="{{ asset('Images/2nd.mp4') }}" type="video/webm">
@@ -461,14 +558,14 @@ margin-bottom: -85px;
                 </video> --}}
             </div>
 
-     
 
-            
-            <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
+
+
+            <div class="col-lg-1 col-md-1  col-4 py-5 icons" >
                 <a href="#"><i class="fab fa-discord"></i></a><br>
-                <a href="#"><i class="fab fa-telegram-plane"></i></a><br>
+                <a href="#"><i class="fab fa-discord"></i></a><br>
                 <a href="#"><i class="fab fa-twitter-square"></i></a><br>
-                <a href="#"><i  class="fas fa-infinity"></i></a><br>
+                <a href="#"><i class="fab fa-youtube-square"></i></a><br>
                 <a href="#"><i class="fab fa-youtube-square"></i></a><br>
                 <a href="#"><i class="fab fa-linkedin"></i></a><br>
             </div>
@@ -477,15 +574,16 @@ margin-bottom: -85px;
     </div>
 
 
-    <div class="container-fluid con3" style="background:url('{{asset('Images/a.png')}}');  background-color: #1295BD !important;    background-repeat: no-repeat;  ">
-    {{-- <div class="container-fluid con3" style=""> --}}
+    <div class="container-fluid con3"
+        style="background:url('{{ asset('Images/a.png') }}');  background-color: #1295BD !important;    background-repeat: no-repeat;  ">
+        {{-- <div class="container-fluid con3" style=""> --}}
         <div class="row">
             <div class="col-12" style="text-align: center">
                 <img src="{{ asset('Images/Asset 6.png') }}" style="margin-top: -2%;    max-width: 100%;"
                     class="text-center" alt="">
             </div>
         </div>
-        <br><br>
+
         <div class="row">
 
 
@@ -493,10 +591,14 @@ margin-bottom: -85px;
             <div class="col-md-1  col-lg-1 col-12 mt-3 text-center">
 
                 <img class="   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 4.png') }}" style="max-width: 100%" alt="">
+
+                <p style="    font-size: 6px;
+               color: white;">CLICK HERE TO KNOW MORE</p>
             </div>
 
 
             <div class=" col-md-8 mt-n4 mt-lg-0  col-lg-8 col-sm-12">
+
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
                     <div class="carousel-inner">
@@ -553,12 +655,36 @@ margin-bottom: -85px;
 
 
 
+                <div class="items secondslider" style="display: none">
+                    <div class="card">
+                        <div class="card-body"> <img class="logo" src="{{asset('Images/Asset 12.png')}}"> </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body"> <img class="logo" src="{{asset('Images/Asset 2.png')}}"> </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body"> <img class="logo" src="{{asset('Images/Asset 11.png')}}"> </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body"> <img class="logo" src="{{asset('Images/Asset 2.png')}}"> </div>
+                    </div>
+                   
+                </div>
+
+
+
+
             </div>
 
 
             <div class="col-12 col-md-1 col-lg-1 mt-3 text-center ">
 
-                <img class="   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 3.png') }}" style="max-width: 100%" alt="">
+                <img class="   mb-5 mb-lg-0 dyor  ssdds" src="{{ asset('Images/Asset 3.png') }}" style="max-width: 100%"
+                    alt="">
+
+
+                <p style="    font-size: 5px;
+                    color: white;">CLICK HERE TO VOTE PROJECTS</p>
             </div>
 
         </div>
@@ -623,12 +749,13 @@ margin-bottom: -85px;
             </div>
 
 
-            <div class="col-md-1 col-lg-1 col-sm-2">
-                <img class="width:100%" style="border-radius: 50%;  box-shadow: 0 0 30px #3c3838;"" src="{{ asset('Images/Danjo Logo.jpg') }}"
-                    alt="Avatar">
+            <div class="col-md-1 col-lg-1 col-1">
+                <img class="width:100%" style="border-radius: 50%;  box-shadow: 0 0 30px #3c3838;"" src="
+                    {{ asset('Images/Danjo Logo.jpg') }}" alt="Avatar">
             </div>
-            <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-sm-8 ">
-                <h5 class="ml-5 ml-lg-0" style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h5>
+            <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-10 ">
+                <h5 class="ml-5 ml-lg-0" style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master
+                </h5>
             </div>
 
         </div>
@@ -641,17 +768,16 @@ margin-bottom: -85px;
 
                 <div class="row">
 
-                    <div class="col-lg-2 col-md-2 col-sm-12 text-center " style="    background: #007199;
+                    <div class="col-lg-2 col-md-2 col-sm-12 text-center pl-0 ">
+                       <img src="{{asset('Images/AdHeadline.jpg')}}" alt="" style="width: 136%; height:100px;    object-fit: fill;">
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 text-center" style=" 
                     width: 0;
                     height: 0px;
-                    border-bottom: 100px solid #000000;
-                    border-right: 53px solid transparent;padding-bottom: 3px;s">
-                        <br>
-                        <h6 class="mt-3" style="color: white">AD BANNER</h6>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-12 text-center">
-                        <br>
-                        <h1 style="color: White">ADVERTISEMENT HEADLINE</h1>
+                    border-top: 100px solid #007199;
+                    border-left: 50px solid transparent;">
+                       
+                        {{-- <h1 style="color: White">ADVERTISEMENT HEADLINE</h1> --}}
 
                         <br>
                     </div>
@@ -677,9 +803,12 @@ margin-bottom: -85px;
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 1.jpg') }}" alt="">
                 <p class="story_heading"> What To Know About The Highly Anticipated Meta Thugs NFT Drop</p>
             </div>
-            <div class="col-md-3 col_margin">
-                <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 2.jpg') }}" alt="">
-                <p class="story_heading" style="font-size: 16px !important;">The Mimir Token lists on Apaswap Polygon DEX with $MIMIR/USDT trading pair</p>
+            <div class="col-md-3 col_margin ">
+                <div class="img_sizing w-100"
+                    style="background-image:url('{{ asset('Images/Blog 2.jpg') }}');    background-position: right;background-repeat: no-repeat;background-size: cover; ">
+                </div>
+                <p class="story_heading" style="font-size: 16px !important;">The Mimir Token lists on Apaswap Polygon DEX
+                    with $MIMIR/USDT trading pair</p>
             </div>
             <div class="col-md-3 col_margin">
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 3.jpg') }}" alt="">
@@ -705,11 +834,11 @@ margin-bottom: -85px;
                     <img class="team_name_picture" src="{{ asset('/Images/2x/7.png') }}" alt="">
                 </h2>
                 <p class='intro_para' style="color: white">
-               Co-Founder & CEO
+                    Co-Founder & CEO
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -724,7 +853,7 @@ margin-bottom: -85px;
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fab fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -739,7 +868,7 @@ margin-bottom: -85px;
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fab fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -756,7 +885,7 @@ margin-bottom: -85px;
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fab fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -771,7 +900,7 @@ margin-bottom: -85px;
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fab fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -786,7 +915,7 @@ margin-bottom: -85px;
                 </p>
                 <h4 class="team_contact_icon">
                     <i class="fab fa_icon fab fa-linkedin"></i>
-                    <i class="fab fa_icon fas fa-infinity"></i>
+                    <i style="font-size:20px;padding:3px 0px 2px 0px" class="fab fa_icon fas fa-infinity"></i>
                     <i class="fab fa_icon fab fa-telegram-plane"></i>
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
@@ -808,6 +937,20 @@ margin-bottom: -85px;
                     </div>
                 </div>
             </div>
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-12">
+
+
+
+                <span class="dot"></span>
+
+            </div>
+
         </div>
     </div>
 
