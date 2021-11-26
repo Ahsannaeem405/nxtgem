@@ -196,7 +196,7 @@
     .img_sizing {
 
         height: 300px;
-        box-shadow: 10px 10px 18px #888888;
+        box-shadow: 10px 10px 18px #3c3838;
     }
 
     .story_heading {
@@ -213,14 +213,14 @@
     }
 
     .team_img_pading {
-        margin: 20px;
+        /* margin: 20px; */
     }
 
     .img_sizing_team {
         border-radius: 50%;
         width: 150px;
         height: 150px;
-        box-shadow: 5px 5px 18px #888888;
+        box-shadow: 5px 5px 18px #3c3838;
 
     }
 
@@ -248,7 +248,8 @@
     .fa_icon {
         background-color: white;
         border-radius: 20%;
-        padding: 4px;
+        padding: 2px;
+        font-size: 22px;
     }
 
 
@@ -265,15 +266,114 @@
 
 .carousel-control-prev{
 
-    top: 13px !important;
+    top: -14px !important;
 }
 
 
 .carousel-control-next{
 
-    top: 13px !important; 
+    top: -14px !important; 
+}
+
+.settext{
+
+    margin-bottom: -135px;
+}
+
+.settext1{
+
+margin-bottom: -85px;
 }
 }
+
+
+@media only screen and (max-width: 1200px) and (min-width: 992px)  {
+
+.dyor{
+
+    margin-top: 14px !important;    
+
+}
+
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 768px)  {
+
+.dyor{
+
+    margin-top: 24px !important;    
+
+}
+
+.carousel-control-prev{
+
+    top: 48px !important;
+}
+
+.carousel-control-next{
+
+top: 48px !important;
+}
+
+}
+
+
+
+@media only screen and (max-width: 1400px) and (min-width: 1201px)  {
+
+.dyor{
+
+    margin-top: 15px !important;    
+
+}
+
+.settext{
+
+    margin-bottom: -102px;
+}
+.settext1{
+
+margin-bottom: -85px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 1100px) and (min-width: 992px)  {
+
+.dyor{
+
+    margin-top: 50px !important;    
+
+}
+
+.carousel-control-prev{
+
+    top:35px !important;
+}
+
+
+
+.carousel-control-next{
+
+top:35px !important;
+}
+
+
+.settext{
+
+    margin-bottom: -94px;
+}
+.settext1{
+
+margin-bottom: -85px;
+}
+}
+
+}
+
 
 
 /* @media screen and (min-width: 768px) {
@@ -346,19 +446,22 @@
                 <br>
             </div> --}}
 
-            <div class="col-lg-3 col-md-3"></div>
-            <div class="col-lg-6 mt-2 col-md-6 col-sm-6">
-                <video controls width="100%">
+     
+            <div class="col-lg-11 mt-5 col-md-11 text-center  col-sm-6 py-5">
+
+<h1 class="mt-2" style="    letter-spacing: 18px;">INTRO VIDEO</h1>
+                
+                {{-- <video controls width="100%">
 
                     <source src="{{ asset('Images/2nd.mp4') }}" type="video/webm">
 
                     <source src="{{ asset('Images/2nd.mp4') }}" type="video/mp4">
 
                     Sorry, your browser doesn't support embedded videos.
-                </video>
+                </video> --}}
             </div>
 
-            <div class="col-lg-2 col-md-2"></div>
+     
 
             
             <div class="col-lg-1 col-md-1 text-center col-sm-1 py-5 icons">
@@ -387,9 +490,9 @@
 
 
             <div class="col-1"></div>
-            <div class="col-md-1  col-lg-1 col-12 mt-4 text-center">
+            <div class="col-md-1  col-lg-1 col-12 mt-3 text-center">
 
-                <img class="mt-3 mt-md-2   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 4.png') }}" style="max-width: 100%" alt="">
+                <img class="   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 4.png') }}" style="max-width: 100%" alt="">
             </div>
 
 
@@ -403,7 +506,7 @@
 
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
+                                        <div class="img-box mt-4 mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 12.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -413,7 +516,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
+                                        <div class="img-box  mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 2.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -423,7 +526,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="thumb-wrapper">
-                                        <div class="img-box mt-5 mt-md-2 mt-lg-0">
+                                        <div class="img-box  mt-md-2 mt-lg-0">
                                             <img src="{{ asset('Images/Asset 11.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="thumb-content">
@@ -438,11 +541,11 @@
                     </div>
                     <!-- Carousel controls -->
                     <a class="carousel-control-prev" style="    background: white;
-                    opacity: 1;    top: 26px;" href="#myCarousel" data-slide="prev">
+                    opacity: 1;    top: 2px;" href="#myCarousel" data-slide="prev">
                         <i class="fa fa-angle-left"></i>
                     </a>
                     <a class="carousel-control-next" style="    background: white;
-                    opacity: 1;    top: 26px;" href="#myCarousel" data-slide="next">
+                    opacity: 1;    top: 2px;" href="#myCarousel" data-slide="next">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
@@ -453,9 +556,9 @@
             </div>
 
 
-            <div class="col-12 col-md-1 col-lg-1 mt-4 text-center ">
+            <div class="col-12 col-md-1 col-lg-1 mt-3 text-center ">
 
-                <img class="mt-3 mt-md-2   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 3.png') }}" style="max-width: 100%" alt="">
+                <img class="   mb-5 mb-lg-0 dyor" src="{{ asset('Images/Asset 3.png') }}" style="max-width: 100%" alt="">
             </div>
 
         </div>
@@ -480,7 +583,7 @@
 
             <div class="col-12 mt- col-md-6 col-lg-6">
 
-                <img style="width: 100%;    box-shadow: 0 0 14px #3c3838;" src="{{ asset('Images/Live Asset.JPG') }}">
+                <img style="width: 100%;    box-shadow: 0 0 40px #3c3838;" src="{{ asset('Images/Live Asset.JPG') }}">
             </div>
             <div class="col-1"></div>
             <div class="col-sm-12 mt-3 mt-md-0 mt-lg-0 col-md-2 col-lg-2 ">
@@ -521,11 +624,11 @@
 
 
             <div class="col-md-1 col-lg-1 col-sm-2">
-                <img class="width:100%" style="border-radius: 50%;" src="{{ asset('Images/Danjo Logo.jpg') }}"
+                <img class="width:100%" style="border-radius: 50%;  box-shadow: 0 0 30px #3c3838;"" src="{{ asset('Images/Danjo Logo.jpg') }}"
                     alt="Avatar">
             </div>
             <div class="col-md-4 mt-md-3 mt-lg-3 ml-md-n3 ml-lg-n3 col-lg-4 col-sm-8 ">
-                <h6 class="ml-5 ml-lg-0" style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h6>
+                <h5 class="ml-5 ml-lg-0" style="color:white">MIMIR QUIZ- SASAGOT KALANG KIKITA KANA...Danjo Capital Master</h5>
             </div>
 
         </div>
@@ -569,7 +672,7 @@
 
 
 
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center settext">
             <div class="col-md-3 col_margin">
                 <img class="img_sizing" style="width: 100%" src="{{ asset('/Images/Blog 1.jpg') }}" alt="">
                 <p class="story_heading"> What To Know About The Highly Anticipated Meta Thugs NFT Drop</p>
@@ -642,7 +745,7 @@
                 </h4>
             </div>
         </div>
-        <div class="row  d-flex align-items-center justify-content-center">
+        <div class="row  d-flex align-items-center justify-content-center mt-md-5 settext1">
             <div class="col-md-3 team_img_pading text-center">
                 <img class="img_sizing_team" src="{{ asset('/Images/2x/4.png') }}" alt="">
                 <h2 class="team_name">
@@ -658,7 +761,7 @@
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
-            <div class="col-md-3 team_img_pading text-center">
+            <div class="col-md-3 team_img_pading text-center ">
                 <img class="img_sizing_team" src="{{ asset('/Images/2x/5.png') }}" alt="">
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/11.png') }}" alt="">
@@ -673,7 +776,7 @@
                     <i class="fab fa_icon fab fa-twitter"></i>
                 </h4>
             </div>
-            <div class="col-md-3 team_img_pading text-center">
+            <div class="col-md-3 team_img_pading text-center ">
                 <img class="img_sizing_team" src="{{ asset('/Images/2x/6.png') }}" alt="">
                 <h2 class="team_name">
                     <img class="team_name_picture" src="{{ asset('/Images/2x/12.png') }}" alt="">

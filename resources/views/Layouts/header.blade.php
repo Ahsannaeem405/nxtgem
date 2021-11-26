@@ -39,7 +39,7 @@ overflow-x: hidden;">
     }
 
     .con {
-        border-top: 1px solid #05A9C5;
+        border-top: 2px solid #05A9C5;
     }
 
     .list-unstyled li a {
@@ -186,39 +186,39 @@ overflow-x: hidden;">
           
           
           
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand ml-3" href="#">
 
-                <img class="logo_sizing ml-4 " src="{{ asset('Images/122preview.png') }}" alt="">
+                <img class="logo_sizing  " src="{{ asset('Images/122preview.png') }}" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler mt-2" style="float: right;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item m-1 active">
+                    <li class="nav-item m-2 active">
                         <a class="nav-link" href="#">Home </a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Daily Top 10</a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Game List</a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Upcoming </a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Exchange </a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Resources</a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Comunity </a>
                     </li>
-                    <li class="nav-item m-1">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#">Marketplace </a>
                     </li>
 
@@ -283,9 +283,9 @@ overflow-x: hidden;">
 
                                 <div class="col-12" style="display: flex">
 
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand ml-4" href="#">
 
-                                    <img class="logo_sizing" src="{{ asset('Images/122preview.png') }}" alt="">
+                                    <img class="logo_sizing " src="{{ asset('Images/122preview.png') }}" alt="">
                                 </a>
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -340,8 +340,8 @@ overflow-x: hidden;">
 
 <form class="form-inline my-2 my-lg-0" style="float:right">
 
-  <div id="abc" class="mt-3" style=" 
-height: 0px;
+  <div id="abc" class="" style=" 
+height: 0px;    margin-top: 13px;
 border-bottom: 55px solid black;
 border-left: 35px solid transparent;">
       <input type="text" style="    border: 0px;    padding-bottom: 2px;" class="example mt-2"
